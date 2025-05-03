@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mouldy Cheese";
+  transition: 2s ease-in-out 0s;
+  transition-property: background-color, color;
+}
+
+#Zoom {
+  border-collapse: separate;
+  margin-top: 25px;
+  min-width: 400px;
+  font-size: larger;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#Zoom thead tr {
+  background-color: #008DD5;
+  color: #EBBAB9;
+  font-weight: bold;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.226);
+}
+
+#Zoom th, #Zoom td {
+  padding: 5px 13px;
+}
+
+#Zoom tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #FEC601;
+}
+
+#Zoom tbody tr:last-of-type {
+  border-bottom: 2px solid #008DD5;
+}
+
+#Table {
+  display: flex;
+  justify-content: center;
+}
+
+#Alpenlibe {
+  animation-name: Boom;
+  animation-duration: 10000ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#Alpenlibe:hover {
+  background-color: rgb(210, 255, 121);
+  color: rgb(112, 63, 143);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-family: "Mouldy Cheese";
+}
+
+.modal-content {
+  background-color: #FEC601;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  text-align: center;
+  max-width: 300px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #008DD5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-content button:hover {
+  background-color: #005f99;
+}
+
+.modal-content input {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 80%;
+}
+
+@font-face {
+  font-family: "Mouldy Cheese";
+  src: url("mouldy-cheese-font/MouldyCheeseRegular-WyMWG.ttf") format("truetype");
+}
+
+@keyframes Boom {
+  0% {}
+  50% { transform: skew(315deg); }
+  100% {}
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.a {
+  text-align: center;
+}
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.confetti {
+  width: 100%;
+  height: 150px;
+}
+
+.c1 {
+  fill: #ff595e;
+  animation: fall 2s ease-out;
+  animation-iteration-count: 10;
+}
+.c2 {
+  fill: #ffca3a;
+  animation: fall 2s ease-out;
+  animation-iteration-count: 10;
+}
+.c3 {
+  fill: #8ac926;
+  animation: fall 2s ease-out;
+  animation-iteration-count: 10;
+}
+.c4 {
+  fill: #1982c4;
+  animation: fall 2s ease-out;
+  animation-iteration-count: 10;
+}
+.c5 {
+  fill: #6a4c93;
+  animation: fall 2s ease-out;
+  animation-iteration-count: 10;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.confetti-container {
+  display: none;
+}
+
+.fade-text {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+.fade-text.hidden {
+  opacity: 0;
+}
+
+#readStoryBtn {
+  background-color: #4bb54e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-family: "Mouldy Cheese";
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#readStoryBtn:hover {
+  background-color: #429a46e4;
+  font-family: sans-serif;
+  color: #b61010;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#btn2{
+  background-color: #0091ff;
+  color: rgb(12, 255, 251);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-family: "Mouldy Cheese";
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#btn2:hover{
+  background-color: #8000ffe4;
+  font-family: sans-serif;
+  color: #f7ff01;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#jaja{
+  text-align: center;
+}
